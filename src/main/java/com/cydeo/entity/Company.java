@@ -5,5 +5,5 @@ import com.cydeo.entity.common.BaseEntity;
 import javax.persistence.Entity;
 
 @Entity
-public class InvoiceProduct extends BaseEntity {
+public class Company extends BaseEntity {
 }

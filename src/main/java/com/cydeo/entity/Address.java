@@ -1,4 +1,9 @@
 package com.cydeo.entity;
 
-public class Address {
+import com.cydeo.entity.common.BaseEntity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Address extends BaseEntity {
 }
