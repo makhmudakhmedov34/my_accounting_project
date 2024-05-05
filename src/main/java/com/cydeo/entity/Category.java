@@ -18,6 +18,6 @@ import javax.persistence.*;
 public class Category extends BaseEntity {
     private String description;
     @ManyToOne(fetch = FetchType.LAZY)
-    @Column(name = "company")
+    @JoinColumn(name = "company")
     private Company company;
 }

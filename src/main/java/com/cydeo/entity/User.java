@@ -25,10 +25,10 @@ public class User extends BaseEntity {
     private String lastname;
     private String phone;
     @ManyToOne(fetch = FetchType.LAZY)
-    @Column(name = "role_id")
+    @JoinColumn(name = "role_id")
     private Role role;
     @ManyToOne(fetch = FetchType.LAZY)
-    @Column(name = "company_id")
+    @JoinColumn(name = "company_id")
     private Company company;
     private boolean isOnlyAdmin;
 

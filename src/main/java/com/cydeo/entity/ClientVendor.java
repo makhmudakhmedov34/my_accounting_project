@@ -27,6 +27,6 @@ public class ClientVendor extends BaseEntity {
     @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE},fetch = FetchType.LAZY)
     private Address address;
     @ManyToOne(fetch = FetchType.LAZY)
-    @Column(name = "company_id")
+    @JoinColumn(name = "company_id")
     private Company company;
 }
